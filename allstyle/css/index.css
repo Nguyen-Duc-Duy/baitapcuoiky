@@ -1,0 +1,232 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+/* phần menutop */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.aactive {
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* /phần menu top */
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    color: #0c0c0c;
+  }
+  .navbar-nav>li>a {
+    line-height: 20px;
+  }
+  .nav>li>a {
+    position: relative;
+  }
+  .nav-item:hover a{
+    color: #fb4848;
+  }
+  .fa {
+    display: inline-block;
+    /*     font: normal normal normal 14px/1 FontAwesome; */
+    font-size: inherit;
+    text-rendering: auto;
+  }
+  i {
+    margin-right: 5px;
+  }
+  .justify-content-end{
+  float: right;
+}
+
+
+
+
+  .navigation-menu {
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  section,{
+    display: block;
+  }
+  .fa-pull-right a{
+    font-weight: bold;
+    color: #0c0c0c;
+    padding: 5px 5px 10px;
+    font-size: 12px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #0c0c0c;
+  }
+  h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .topnav .right{
+    float: right;
+  }
+  .right a{
+    font-size: 13px;
+  }
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+.nhataitro{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.footer {
+    padding-top: 50px;
+    background-color: #323232;
+}
+.footer .footer-box h3 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+.footer .footer-box h3 span {
+    border-left: 2px solid #a5a5a5;
+    border-right: 2px solid #a5a5a5;
+    padding: 0 20px;
+    color: #fb4848;
+}
+.footer .footer-box ul li a {
+    color: #bfbfbf;
+    padding: 10px 0 10px 10px;
+    display: block;
+}
+.footer .footer-box ul li{
+  list-style: none;
+}
+.fa {
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+}
+.social-icon ul li a{
+  float: left;
+}
+.footer .footer-bottom {
+    margin-top: 15px;
+    padding: 15px;
+    text-align: center;
+    color: #a5a5a5;
+    background-color: #262626;
+}
+.justify-content-end{
+  float: right
+}
